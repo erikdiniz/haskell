@@ -11,9 +11,5 @@ sublistas lista = if crescente lista > 0 then do
 -- Função auxiliar que retorna a quantidade de itens em ordem crescente em uma lista de inteiros.
 crescente :: [Int] -> Int
 crescente [] = 0
-crescente [x] = 1
-crescente (h:t) = if h < primeiro t then 1 + crescente t else 0
-
--- Função auxiliar que retorna o primeiro elemento de uma lista.
-primeiro :: [t] -> t 
-primeiro (head:tail) = head
+crescente [x] = 0
+crescente (h:b:t) = if h < b then 1 + crescente (b:t) else 0
