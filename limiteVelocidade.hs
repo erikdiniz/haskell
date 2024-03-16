@@ -1,7 +1,4 @@
--- Escreva um programa que receba N mensurações inteiras e gere um relatório no seguinte formato:
--- X limite
--- Y tolerancia
--- Z multa
+-- Escreva um programa que receba N mensurações inteiras e gere um relatório no seguinte formato: "X limite; Y tolerancia; Z multa"
 -- Onde X, Y, Z são, respectivamente, o número de mensurações abaixo de 80 km/h (incluindo 80 km/h), o número de mensurações entre 80 km/h e 88 km/h (incluindo 88km/h) e o número de mensurações acima de 88 km/h.
 limiteVelocidade :: [Int] -> String
 limiteVelocidade [] = ""
