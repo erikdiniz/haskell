@@ -8,7 +8,7 @@ sublistas lista = if crescente lista > 0 then do
         let aux = drop 1 lista
         sublistas aux
 
--- Função auxiliar que retorna a quantidade de itens em ordem crescente em uma lista de inteiros.
+-- Função auxiliar que retorna a quantidade de itens (consecutivos) em ordem crescente em uma lista de inteiros.
 crescente :: [Int] -> Int
 crescente [] = 0
 crescente [x] = 0
